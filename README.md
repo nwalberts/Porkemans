@@ -18,7 +18,7 @@ Basically, we want to do everything that is required to load the page, and have 
 
 The below diagram is much of what we are accustomed to as a synchronous HTTP request
 
-[synchronous]: http://i85.photobucket.com/albums/k71/nwalberts/synchro_zpsjjul8cj1.png
+[synchronous](http://i85.photobucket.com/albums/k71/nwalberts/synchro_zpsjjul8cj1.png)
 
 When we make this request, the rest of our app is blocked until the web request is finished
   - if this lasts too long, then things will time out and we will have an error
@@ -27,7 +27,7 @@ When we make this request, the rest of our app is blocked until the web request 
 We’ll need a worker, separate from our current application process, to do this on the side while we continue to use our app
   - once it is done, it can be saved, cached, emailed etc.
 
-[Asynchronous]: http://i85.photobucket.com/albums/k71/nwalberts/synchro_zpsjjul8cj1.png
+[Asynchronous](http://i85.photobucket.com/albums/k71/nwalberts/synchro_zpsjjul8cj1.png)
 
 ### Options for Background Jobs
     - Delayed::Job
