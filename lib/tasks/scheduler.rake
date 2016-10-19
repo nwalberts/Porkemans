@@ -1,6 +1,6 @@
 desc "ALL OF THE PORKOCHUs"
 task :spawn => :environment do
   puts "Breading the pokemans..."
-  Pokemom.spawn
+  Pokemon.spawn
   puts "YOU MONSTER!"
 end
