@@ -48,3 +48,5 @@ We’ll need a worker, separate from our current application process, to do this
             - but if it crashes you are more likely to lose jobs
 
 Configuring Deployment with Heroku
+
+[Heroku Scheduler](https://devcenter.heroku.com/articles/scheduler)
