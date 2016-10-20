@@ -1,4 +1,4 @@
-class ReviewMailer < ApplicationMailer
+class PokemonMailer < ApplicationMailer
   def new_email
 
     mail(

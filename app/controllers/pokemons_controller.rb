@@ -7,7 +7,7 @@ class PokemonsController < ApplicationController
   end
 
   def report
-    ReporWorker.perform_async
+    ReportWorker.perform_async
     render text: "REQUEST ADDED TO THE QUE DAWG!"
     # redirect_to pokemons_path
   end

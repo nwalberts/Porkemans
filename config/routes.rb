@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   resources :pokemons
   post 'pokemons/report' => 'pokemons#report', as: :report
 
-  root 'welcome#index'
+  root 'pokemons#index'
 end
