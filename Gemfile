@@ -8,7 +8,7 @@ gem 'jquery-rails'
 gem 'listen'
 gem 'sidekiq'
 gem 'sinatra', github: 'sinatra/sinatra'
-
+gem 'puma'
 
 group :development, :test do
   gem 'capybara'
