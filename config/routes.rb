@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   mount Sidekiq::Web => "/sidekiq"
 
   resources :pokemons
-  post 'pokemons/report' => 'movies#report', as: :report
+  post 'pokemons/report' => 'pokemons#report', as: :report
 
   root 'welcome#index'
 end
