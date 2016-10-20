@@ -14,6 +14,7 @@ class PokemonsController < ApplicationController
 
   # GET /pokemons/1
   def show
+    AutoCatchJob.perform_later
   end
 
   # GET /pokemons/new
