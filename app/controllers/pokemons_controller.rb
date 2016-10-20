@@ -6,6 +6,11 @@ class PokemonsController < ApplicationController
     @pokemons = Pokemon.all
   end
 
+  def report
+    ReporWorker.perform_async
+    render text: "REQUEST ADDED TO THE QUE DAWG!"
+  end
+
   # GET /pokemons/1
   def show
   end
