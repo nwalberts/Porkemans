@@ -27,10 +27,10 @@ When we make this request, the rest of our app is blocked until the web request 
 We’ll need a worker, separate from our current application process, to do this on the side while we continue to use our app
   - once it is done, it can be saved, cached, emailed etc.
 
-[Asynchronous](http://i85.photobucket.com/albums/k71/nwalberts/synchro_zpsjjul8cj1.png)
+[Asynchronous](http://i85.photobucket.com/albums/k71/nwalberts/asynchro_zpslay896au.png)
 
 ### Options for Background Jobs
-- Delayed::Job
+- Delayed::Job (not featured)
     - framework designed by Shopify, works well with ActiveRecord
     - Has a jobs table that tracks jobs
     - relies heavily on DB
@@ -55,6 +55,8 @@ Configuring Deployment with Heroku
 [Sidekiq](https://github.com/mperham/sidekiq)
 
 [Sidetiq](https://github.com/endofunky/sidetiq)
+
+[CronJobs](https://launchschool.com/blog/cron-jobs-and-rails)
 
 [Testing Sidekiq](https://github.com/mperham/sidekiq/wiki/Testing)
 
